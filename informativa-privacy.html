@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="it">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Informativa sulla privacy - Centro Assistenza Poldhub</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1f2328;
+      --muted: #57606a;
+      --accent: #5865f2;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #1e1f22;
+        --fg: #dbdee1;
+        --muted: #949ba4;
+        --accent: #7983f5;
+      }
+    }
+
+    :root[data-theme="dark"] {
+      --bg: #1e1f22;
+      --fg: #dbdee1;
+      --muted: #949ba4;
+      --accent: #7983f5;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--fg);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 16px;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      font-size: 1.8rem;
+      margin-bottom: 0.2em;
+    }
+
+    h2 {
+      font-size: 1.2rem;
+      margin-top: 1.8em;
+      border-bottom: 1px solid var(--muted);
+      padding-bottom: 0.2em;
+    }
+
+    .meta {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    a {
+      color: var(--accent);
+    }
+
+    ul {
+      padding-left: 1.2em;
+    }
+
+    .placeholder {
+      background: rgba(255, 200, 0, 0.25);
+      padding: 0 3px;
+      border-radius: 3px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+
+    <h1>Informativa sulla privacy</h1>
+    <p class="meta">Ultimo aggiornamento: 25/10/2026</p>
+
+    <p>La presente informativa descrive come il bot Discord <strong>Centro Assistenza Poldhub</strong> (di seguito "il
+      Bot") tratta i dati personali degli utenti dei server Discord in cui è presente.</p>
+
+    <h2>1. Titolare del trattamento</h2>
+    <p>Daniel Calzuolo<br>
+      Contatto: <a href="mailto:contact@jesgran.ovh">contact@jesgran.ovh</a></p>
+
+    <h2>2. Dati trattati</h2>
+    <p>Il Bot tratta solo i dati necessari alle singole funzioni, descritte qui sotto.</p>
+    <ul>
+      <li><strong>Identità principale del server (guild tag).</strong> Quando un membro cambia il proprio tag di server,
+        il Bot riceve l'ID utente e il tag per assegnare o rimuovere un ruolo nel server configurato. Non salva questi
+        dati in modo permanente. Nei log del sistema vengono scritti l'ID utente e il tag.</li>
+      <li><strong>Notifiche video.</strong> Il Bot legge il testo dei messaggi nei canali del server per riconoscere i
+        comandi <code>!test123</code>, <code>!reset</code> e <code>!status</code>. Il contenuto dei messaggi non viene
+        memorizzato. Il Bot salva solo gli ID dei video YouTube già notificati, senza dati personali.</li>
+      <li><strong>Iscrizioni ai tornei.</strong> Quando invii il form di iscrizione, il Bot riceve i dati che inserisci
+        e li invia a un canale staff del server, insieme al tuo nome utente Discord. Per TF2: nome Steam, ore di gioco e
+        classe principale. Per CS2: link del profilo Steam e ore di gioco. Per R6: nickname, ruolo principale, rank, K/D
+        e piattaforma.</li>
+      <li><strong>Votazioni.</strong> Quando voti, il Bot salva il tuo ID utente Discord insieme alla categoria votata.
+        Puoi eliminare il tuo voto con il pulsante "Ho sbagliato".</li>
+      <li><strong>Ruolo di notifica.</strong> Il pulsante "campanellina" assegna o rimuove un ruolo sul tuo profilo. Il
+        Bot non salva alcun dato per questa funzione.</li>
+    </ul>
+
+    <h2>3. Finalità e base giuridica</h2>
+    <ul>
+      <li>Assegnare o rimuovere i ruoli in base al guild tag, notificare i nuovi video, gestire le iscrizioni ai tornei,
+        gestire le votazioni e il ruolo di notifica. Base giuridica: esecuzione del servizio che hai richiesto, usando
+        il Bot o inviando un form.</li>
+      <li>Le iscrizioni ai tornei sono facoltative. Inviando il form acconsenti al trattamento dei dati inseriti per la
+        partecipazione al torneo.</li>
+    </ul>
+
+    <h2>4. Conservazione</h2>
+    <ul>
+      <li>I voti restano salvati finché non li elimini tu con "Ho sbagliato" oppure finché un amministratore non azzera
+        il database.</li>
+      <li>Le iscrizioni ai tornei restano nel canale staff finché un amministratore non le cancella.</li>
+      <li>I log di sistema con ID utente e tag vengono conservati secondo la politica del servizio di hosting: Fino alla
+        fine di una votazione / iscrizione a un torneo poi eliminate.</li>
+      <li>Il Bot non conserva il contenuto dei messaggi.</li>
+    </ul>
+
+    <h2>5. Destinatari e servizi terzi</h2>
+    <p>I dati sono trattati tramite Discord (piattaforma su cui il Bot opera) e tramite il servizio di hosting che
+      esegue il Bot: Render Services, Inc. Il Bot non
+      cede dati a terzi per fini commerciali.</p>
+
+    <h2>6. Trasferimenti extra UE</h2>
+    <p>Il Bot è eseguito su server situati a Francoforte (Germania), all'interno dell'Unione Europea. Il fornitore di hosting
+      Render Services, Inc. è una società statunitense: per eventuali accessi ai dati dal di fuori dell'UE si applicano le
+      garanzie previste dalla normativa per i trasferimenti extra UE, come le clausole contrattuali standard.</p>
+
+    <h2>7. I tuoi diritti</h2>
+    <p>Hai diritto di accesso, rettifica, cancellazione, limitazione e opposizione al trattamento, oltre al diritto di
+      proporre reclamo al Garante per la protezione dei dati personali.</p>
+    <p>Per esercitare questi diritti, o per chiedere la cancellazione dei tuoi dati, scrivi a <a
+        href="mailto:contact@jesgran.ovh">contact@jesgran.ovh</a> indicando il tuo ID utente Discord.</p>
+
+    <h2>8. Modifiche</h2>
+    <p>Questa informativa può essere aggiornata. La versione in vigore è sempre quella pubblicata a questo indirizzo.
+    </p>
+
+  </main>
+</body>
+
+</html>
